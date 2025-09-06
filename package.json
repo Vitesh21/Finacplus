@@ -1,0 +1,24 @@
+{
+  "name": "music-library-micro-frontend",
+  "version": "1.0.0",
+  "description": "Music Library Micro Frontend Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start-all.js",
+    "start:main": "cd main-app && npm run dev",
+    "start:mf": "cd music-library-mf && npm run dev",
+    "build": "npm run build:mf && npm run build:main",
+    "build:main": "cd main-app && npm run build",
+    "build:mf": "cd music-library-mf && npm run build",
+    "preview": "npm run preview:mf & npm run preview:main",
+    "preview:main": "cd main-app && npm run preview",
+    "preview:mf": "cd music-library-mf && npm run preview",
+    "clean": "npm run clean:mf && npm run clean:main",
+    "clean:main": "cd main-app && npm run clean",
+    "clean:mf": "cd music-library-mf && npm run clean",
+    "install:all": "npm install && cd main-app && npm install && cd ../music-library-mf && npm install"
+  },
+  "keywords": ["microfrontend", "react", "vite", "module-federation"],
+  "author": "",
+  "license": "MIT"
+}
